@@ -4,7 +4,7 @@ BINS = $(addprefix build/, $(SRC:.c=))
 all: docker
 
 docker: $(BINS)
-	docker build -t fp_tests .
+	docker build -t fptests .
 
 build/%: src/%.c
 	gcc -o $@ $^ -lm -static

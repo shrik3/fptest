@@ -1,2 +1,2 @@
 from busybox:latest
-COPY build/ fp-tests
+COPY build/ fptests
